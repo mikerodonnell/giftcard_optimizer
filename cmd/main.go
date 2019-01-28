@@ -40,6 +40,7 @@ func main() {
 	// GiftList.Optimize() returns (nil, nil) if there's no suitable combination
 	if cheap == nil || expensive == nil {
 		fmt.Println("Not possible")
+		return
 	}
 
 	fmt.Println(fmt.Sprintf("%s, %s", cheap, expensive))
